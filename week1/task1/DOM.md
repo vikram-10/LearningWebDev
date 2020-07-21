@@ -1,0 +1,4 @@
+The DOM is a language independent interface that is used for HTML and CSS in the field of web developent. It is ainly present in the form of a tree structure. This is because a tree forat is much more easier to traverse and search than other object types. Hence, this drastically reduces the execution time. The DOM represents the document as nodes and objects, that way the programming languages can connect to the pages.The DOM Represents objects so that they can be mmanipulated by Scripting languages such as JavaScript
+In the beginning, JavaScript and the DOM were tightly intertwined, but eventually, they evolved into separate entities. The page content is stored in the DOM and may be accessed and manipulated via JavaScript, so that we may write this approximative equation:
+
+API = DOM + JavaScript
