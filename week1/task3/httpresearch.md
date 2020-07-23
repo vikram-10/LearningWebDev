@@ -7,12 +7,13 @@ History of the HTTP:
 <li>1997-HTTP 1.1
       Came within just one year due to internet revolution as heavy dynamic websites started popping up. Cross Origin Resource Sharing(sharing of documents across domains)
       Flaws with HTTP1.1:
-        ->HOL: Head Of Line Blocking
-                Earlier 1 TCP connection was used for exchange of data, now 6 TCP is used
-        ->Repetition of Header Data
-                Each header carries some data such as cookie,user agent etc. It is sent with every req and cannot be compressed also
-        ->More focus on gzip,minifying CSS/JS etc.
-Earilier TCP connections were dynamic and used to get destroyedf once the connection was over, but after Keep-Alive, the TCP connections could be Reused.</li>   
+      <ul>
+        <li>->HOL: Head Of Line Blocking
+              Earlier 1 TCP connection was used for exchange of data, now 6 TCP is used</li>
+        <li>->Repetition of Header Data
+                Each header carries some data such as cookie,user agent etc. It is sent with every req and cannot be compressed also</li>
+        <li>->More focus on gzip,minifying CSS/JS etc.
+Earilier TCP connections were dynamic and used to get destroyedf once the connection was over, but after Keep-Alive, the TCP connections could be Reused.</li></ul></li>   
         
 <li>2012-SPDY/2</li>
       
