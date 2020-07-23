@@ -1,5 +1,5 @@
 Upon exploring,these are the new tags that are introduced in HTML 5 lately:
-
+<!--
 <article> -Represents an independent piece of content of a document, such as a blog entry or newspaper article
 <aside > -Represents a piece of content that is only slightly related to the rest of the page.
 <audio> -Defines an audio file.
@@ -24,7 +24,7 @@ Upon exploring,these are the new tags that are introduced in HTML 5 lately:
 <video> -Defines a video file.
 <wbr> -Represents a line break opportunity.
 
-
+-->
 My finding as to why these were introduced is because, as a lot of people have started to learn HTML to create front-end websites to showcase their content, HTML5 has made this 
 easier for those people by introducing this kind of much efficient tags in order to make development easier.
 It also reduces the amount of code required by bringing in new tags with built in features, for eg. people trying to create blog posts can now easily partition their blogs by
