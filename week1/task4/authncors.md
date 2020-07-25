@@ -1,0 +1,9 @@
+<h3>CORS</h3>
+Cors is also known as CROSS ORIGIN RESOURCE SHARING and it allows restricted resources to be requested by a web-page from another domain from which the first resource was served
+CORS is AJAX. What makes CORS special is that the AJAX request is being posted to a domain different than that of the client. Historically, this type of request has been deemed a security threat and has been denied by the browser. With the prevalence of AJAX and the transformation of thick-client applications, however, modern browsers have been evolved to embrace the idea that critical information doesn't necessarily come from the host domain.
+
+Now, modern browsers (Internet Explorer 8+, Firefox 3.5+, Safari 4+, and Chrome) can make AJAX requests to other domains so long as the target server allows it. This security handshake takes place in the form of HTTP headers. When the client (browser) makes cross-origin requests, it includes the HTTP header - Origin - which announces the requesting domain to the target server. If the server wants to allow the cross-origin request, it has to echo back the Origin in the HTTP response heder - Access-Control-Allow-Origin.
+<b>In case, the protected resource or page is accessible through a domain that differs from the origin, a restriction from same origin policy is applied. To circumvent the same-origin policy, use the Cross-origin resource sharing.</b>
+
+<h3>Auth</h3>
+<b>An Authorisation Header is sent with the request.</b> HTTP Authentication provides a method to protect webpages and resources. Basic Auth must only be used with HTTPS or password will be visible to anyone
