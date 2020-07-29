@@ -1,7 +1,9 @@
 var arr = ["GUVI", "I", "am", "a geek"];
 function transformFirstAndLast(arr) {
-    var newObject=Object.assign({},arr);
-    console.log(newObject);
+ var a={};
+var name=arr[0];
+a[name]=arr[(arr.length)-1];
+console.log(a);
  //return newObject;
 }
 
