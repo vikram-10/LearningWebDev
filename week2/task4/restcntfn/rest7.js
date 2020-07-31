@@ -19591,7 +19591,7 @@ var aaa=[
     }
     ];
  const filteredItems=aaa.filter((aaa)=>{
-     return aaa.region="Asia";
+     return aaa.region=="Asia";
  })
 var totAsia=filteredItems.reduce((counted,filteredItems)=>{
     return counted+(filteredItems.population);
