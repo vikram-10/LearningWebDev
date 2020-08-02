@@ -31,6 +31,26 @@ class Tv{
         return this.brand+" at"+" channel "+this.channel+", volume "+this.volume;
     }
 }
-var aaa=new Tv("Heroku",1000,5,"on",50,50); //inputs being given as params
-var op=aaa.tvStatus();                      //calling function from inside the class
-console.log(op);                            //output the return statement
+
+class subTv extends Tv{
+    constructor(screenThickness,energyUsage,lifespan,refreshRate,viewingAngle,backlight,displayDetails){
+        this.screenThickness=screenThickness;
+        this.energyUsage=energyUsage;
+        this.lifespan=lifespan;
+        this.refreshRate=refreshRate;
+        this.viewingAngle=viewingAngle;
+        this.backlight=backlight;
+        this.displayDetails=displayDetails;
+    }
+    displayDetails(){
+       return this.brand;
+    }
+}
+var aaa=new Tv("Heroku",1000,5,"on",50,50);  //inputs being given as params
+var subaaa=new subTv(15,1000,13,150,120,"contrast","highrgb");
+var op=subaaa.displayDetails();                       //calling function from inside the class
+console.log(op);                             //output the return statement
+
+
+
+//doubt:how to be able to run the final displayDetails function.
