@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form onsubmit="onSubmit()">
+    <label for="name">
+        Name:
+    </label>
+    <input type="text" id="name" required autocomplete="off">
+    <br>
+    <label for="email">
+        Email:
+    </label>
+    <input type="email" id="email" required autocomplete="off">
+    <br>
+    <label for="subject">
+        Subject:
+    </label>
+    <input type="text" id="subject" required autocomplete="off">
+    <br>
+    <label for="msg">
+        Message:
+    </label>
+    <input type="text" id="msg" required autocomplete="off">
+    <br>
+    <button>Submit</button>
+</form>
+<script>
+    function onSubmit(){
+        alert("Sent!");
+    }
+</script>
+</body>
+</html>
