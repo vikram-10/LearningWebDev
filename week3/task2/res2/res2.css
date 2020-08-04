@@ -1,0 +1,107 @@
+body{
+    background-color:  #303e47;
+}
+.header{
+    font-family: 'Anton', sans-serif;
+    color: #fe5b58;
+    letter-spacing: 10px;
+    margin: auto;
+    width: 25%;
+    font-size: 70px;
+    white-space: nowrap;
+}
+#subh{
+    color: white;
+    float: left;
+    font-size: 17px;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    margin-left: 83px;
+}
+#icon{
+     max-width: auto;
+     height: 75px;
+}
+.first{
+    width: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+#leftb{
+    margin-top: auto;
+    font-size: 17px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+
+.highlight{
+     font-size: 40px;
+}
+#icon2{
+    height: 100px;
+}
+#icon3{
+    width: 20%;
+}
+#t2{
+    margin-top: 10%;
+    height:250px;
+    width: 800px;
+    margin-left: 10%;
+}
+#t1{
+    width: 800px;
+    height: 500px;
+    margin-left: 10%;
+}
+#leftb1{
+    margin-top: auto;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin-left: 5%;
+}
+#inner{
+    margin-top: auto;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.inner1{
+    margin-top: auto;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 5%;
+}
+#t3{
+    margin-top: 10%;
+    width: 800px;
+    height: 500px;
+    margin-left: 10%;
+}
+.inner2{
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 5%;
+}
+#leftb2{
+    margin-top: auto;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#fifthbox{
+    width: 50%;
+}

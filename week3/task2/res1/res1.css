@@ -1,0 +1,120 @@
+.container{
+    height: 300px;
+    width:100%;
+    background-color:#565656;
+}
+.container2{
+    height: 40px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+.container3{
+    height: 40px;
+    width: 100%;
+    background-color: #565656;
+}
+.overlay1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9%;
+    width: 50%;
+    z-index: 30;
+    margin-top: 15%;
+    margin-left: 25%;
+    background-color: #fabe28;
+    border-radius: 8px;
+  }
+  #nametag{
+      font-size: 50px;
+      padding-top: 10px;
+      font-family: 'Roboto', sans-serif;
+  }
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+.imgmanip{
+    height:200px;
+    width:auto;
+    border-radius: 45%;
+    margin-left: 45%;
+    margin-top: 6%;
+}
+#topcontent{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 10px;
+    color: grey;
+}
+.outer {
+    width: 1px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .inner {
+    position: absolute;
+    width:100%;
+    height: 40%;
+    background: grey;
+    top: 30%;
+    box-shadow: 0px 0px 30px 20px grey;
+  }
+  .rounder{
+      border-radius: 50%;
+      height: 70px;
+      width:auto;
+  }
+
+  #words{
+      font-size: 30px;
+  }
+
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+table{
+      border-right: 10px solid black;
+  }
