@@ -6,12 +6,18 @@
     outline-offset: -30px;
     z-index: 10;*/
 }
+
+.royalfont{
+    font-family:'Playfair Display', serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+}
 .container{
     position: relative;
     background-color: #1f1527;
     height: 600px;
-    border-top-left-radius: 25px;
-    font-family: 'Playfair Display', serif; 
+    border-top-left-radius: 25px; 
     color: white; 
 }
 .container::after{
@@ -45,6 +51,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #f5ebe2;
 }
 
 .container4{
@@ -53,6 +60,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #1f1527;
 }
 
 .container5{
@@ -61,6 +69,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #ffffff;
 }
 
 
@@ -70,6 +79,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #1f1527;
 }
 
 
@@ -79,6 +89,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #eeaabe;
 }
 
 .container8{
@@ -87,6 +98,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #1f1527;
 }
 
 .container9{
@@ -95,6 +107,7 @@
     height: 400px;  
     transform-origin: top right;
     transform: skewY(-4deg);
+    color: #1f1527;
 }
 
 .container10{
@@ -119,12 +132,17 @@
 }
 
 .slanttext{
-    padding-top: 10%;
+    padding-left: 5%;
     transform: skewY(4deg);
 }
 
 .bigletter{
-    font-size: 800%;
+    font-size: 400%;
+}
+
+.subfont{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 
