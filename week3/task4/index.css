@@ -1,0 +1,15 @@
+#starter{
+    margin-top: 10%;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+.thicken{
+    border-top: 4px solid black;
+}
+
+#cont2{
+   border: 2px solid black;
+   padding: 5%;
+}
