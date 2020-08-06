@@ -1,0 +1,26 @@
+#starter{
+    margin-top: 10%;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    padding: 4%;
+}
+.thicken{
+    border-top: 4px solid black;
+}
+
+#newsdaily{
+    letter-spacing: 10px;
+    font-size: 85px;
+}
+
+.redbox{
+    background-color: maroon;
+    color: white;
+    width: 18%;
+} 
+
+.redlight{
+    color: maroon;
+    font-size: large;
+}
