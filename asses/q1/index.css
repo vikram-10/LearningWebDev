@@ -1,0 +1,28 @@
+body{
+    background-color:#dadcdd;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+input{
+    width:40%;
+    height: 28px;
+    float: right;
+}
+
+label{
+    font-size: 20px;
+}
+
+i{
+    float: right;
+}
+button{
+    margin-top: 5%;
+}
+select{
+    width:40%;
+    height: 28px;
+    float: right;
+}

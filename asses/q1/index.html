@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <form onsubmit="onSubmit()">
+     <label for="fname">Full name</label>
+      <input type="text" placeholder="Full name" name="fname" required><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="add1">Address Line 1</label>
+     <input type="text" placeholder="Address Line 1" name="add1" required><i class="fa fa-address-book-o fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="add2">Address Line 2</label>
+     <input type="text" placeholder="Address Line 2" name="add2" required><i class="fa fa-address-book-o fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="city">City</label>
+     <input type="text" placeholder="City" name="city" required><i class="fa fa-building-o fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="state">State/Province/Region</label>
+     <input type="text" placeholder="State/Province/Region" name="state" required><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="zip">Postal Code/Zip</label>
+     <input type="text" placeholder="Postal Code/Zip" name="zip" required><i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="country">Country</label>
+     <select name="country">
+         <option value="india">India</option>
+         <option value="USA">USA</option>
+         <option value="Pakistan">Pakistan</option>
+         <option value="China">China</option>
+     </select><i class="fa fa-map-o fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="email">Email</label>
+     <input type="text" placeholder="Email" name="email" required><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <label for="phno">Phone Number</label>
+     <input type="text" placeholder="Phone Number" name="phno" required><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+     <br><br>
+     <center><button>Submit</button></center>
+ </form>
+ <script>
+     function onSubmit(){
+         alert("Thanks for submitting!");
+     }
+ </script>
+</body>
+</html>
