@@ -13,3 +13,16 @@
    border: 2px solid black;
    padding: 5%;
 }
+
+#risingsun{
+    font-family: 'Noto Serif', serif;
+    font-size: 70px;
+}
+
+#alignRight{
+    text-align: right;
+}
+
+#alignCenter{
+    text-align: center;
+}
