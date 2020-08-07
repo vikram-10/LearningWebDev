@@ -1,0 +1,41 @@
+body{
+    width: 50%;
+}
+
+table{
+    margin-left: 15%;
+    
+}
+
+td{
+    padding: 1%;
+    border: 1px solid black;
+    padding-right: 15px;
+}
+img{
+    padding-right: 0.5%;
+}
+button{
+    float: right;
+}
+
+.costing{
+    font-size: large;
+}
+
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+h4{
+    font-size: 25px;
+}
