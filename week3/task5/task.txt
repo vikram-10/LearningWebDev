@@ -1,0 +1,16 @@
+do the same resume that was created last time,but this time with DOM
+
+https://gist.github.com/rvsp/735c2cf7cf360f797bae093fa2dfe04d#file-task-1-jpeg
+
+NO BOOTSTRAP
+
+
+task-1 - resume with DOM
+        task-2
+        Calculator(weekend task)
+            Constraints:
+                should dom elements only
+                no html tag in body
+                should section
+                key events(keyboard press)
+                can use bootstrap/Your own CSS
