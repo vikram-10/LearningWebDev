@@ -1,0 +1,47 @@
+body{
+    background-color:#dadcdd;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#brander{
+    font-size: 30px;
+    color: grey;
+}
+
+.jumbotron{
+    background-color: 	#A9A9A9;
+    margin-top: 20%;
+}
+
+#jumbo{
+    text-align: center;
+    font-size: 70px;
+}
+.inner{
+    margin-top: 20%;
+}
+
+#jumboContents{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.buttonAlign{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.headerAlign{
+    text-align: right;
+    margin-top: 0;
+}
+table{
+    padding: 5%;
+}
+
+#footer{
+    color: grey;
+}
