@@ -1,0 +1,56 @@
+.spacer{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+
+.innerDiv{
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    border: 2px solid black;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    box-shadow: 5px 5px gray ;
+    font-size: 30px;
+}
+
+.grey{
+    background-color: gray;
+    border: 5px solid white;
+    color: white;
+}
+
+#marginer{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.innerMargin{
+    margin: 10%;
+}
+
+#paddinger{
+  margin-left: 0px;
+}
+
+.black{
+    background-color: black;
+    border: 5px solid white;
+    color: white;
+}
+
+.red{
+    background-color: maroon;
+    border: 5px solid white;
+    color: white;
+}
+
+.display{
+    text-align: center;
+    width: 50%;
+    padding-bottom: 12px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
