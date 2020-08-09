@@ -11,6 +11,7 @@ innerDiv.setAttribute('class','innerDiv');
 
 var display=document.createElement('span');
 display.setAttribute('class','display');
+display.setAttribute('id','displayText');
 
 var breaker=document.createElement('br');
 
@@ -113,7 +114,7 @@ divColumn18.innerText="2";
 
 var divColumn19=document.createElement('div');
 divColumn19.setAttribute('class','col-3 black');
-divColumn19.innerText="2";
+divColumn19.innerText="3";
 
 var divColumn20=document.createElement('div');
 divColumn20.setAttribute('class','col-3 grey');
@@ -176,98 +177,140 @@ divRow6.append(divColumn22);
 divRow6.append(divColumn23);
 divRow6.append(divColumn24);
 
+var flag=0;
+
+document.getElementById("displayText").value="";
+
 divColumn1.addEventListener("click",function(){
-   display.innerText=divColumn1.innerText;
+   document.getElementById("displayText").innerText+=divColumn1.innerText;
 });
 
 divColumn2.addEventListener("click",function(){
-   display.innerText=divColumn2.innerText;
+   document.getElementById("displayText").innerText="";
 });
 
 divColumn3.addEventListener("click",function(){
-   display.innerText=divColumn3.innerText;
+   document.getElementById("displayText").innerText="";
 });
 
 divColumn4.addEventListener("click",function(){
-   display.innerText=divColumn4.innerText;
+   document.getElementById("displayText").innerText+=divColumn4.innerText;
 });
 
 divColumn5.addEventListener("click",function(){
-   display.innerText=divColumn1.innerText;
+   document.getElementById("displayText").innerText+=divColumn5.innerText;
 });
 
 divColumn6.addEventListener("click",function(){
-   display.innerText=divColumn6.innerText;
+   document.getElementById("displayText").innerText+=divColumn6.innerText;
 });
 
 divColumn7.addEventListener("click",function(){
-   display.innerText=divColumn7.innerText;
+   document.getElementById("displayText").innerText+=divColumn7.innerText;
 });
 
 divColumn8.addEventListener("click",function(){
-   display.innerText=divColumn8.innerText;
+   document.getElementById("displayText").innerText+=divColumn8.innerText;
 });
 
 divColumn9.addEventListener("click",function(){
-   display.innerText=divColumn9.innerText;
+   document.getElementById("displayText").innerText+=divColumn9.innerText;
 });
 
 divColumn10.addEventListener("click",function(){
-   display.innerText=divColumn10.innerText;
+   document.getElementById("displayText").innerText+=divColumn10.innerText;
 });
 
 divColumn11.addEventListener("click",function(){
-   display.innerText=divColumn11.innerText;
+   document.getElementById("displayText").innerText+=divColumn11.innerText;
 });
 
 divColumn12.addEventListener("click",function(){
-   display.innerText=divColumn12.innerText;
+   document.getElementById("displayText").innerText+=divColumn12.innerText;
 });
 
 divColumn13.addEventListener("click",function(){
-   display.innerText=divColumn13.innerText;
+   document.getElementById("displayText").innerText+=divColumn13.innerText;
 });
 
 divColumn14.addEventListener("click",function(){
-   display.innerText=divColumn14.innerText;
+   document.getElementById("displayText").innerText+=divColumn14.innerText;
 });
 
 divColumn15.addEventListener("click",function(){
-   display.innerText=divColumn15.innerText;
+   document.getElementById("displayText").innerText+=divColumn15.innerText;
 });
 
 divColumn16.addEventListener("click",function(){
-   display.innerText=divColumn16.innerText;
+   document.getElementById("displayText").innerText+=divColumn16.innerText;
 });
 
 divColumn17.addEventListener("click",function(){
-   display.innerText=divColumn17.innerText;
+   document.getElementById("displayText").innerText+=divColumn17.innerText;
 });
 
 divColumn18.addEventListener("click",function(){
-   display.innerText=divColumn18.innerText;
+   document.getElementById("displayText").innerText+=divColumn18.innerText;
 });
 
 divColumn19.addEventListener("click",function(){
-   display.innerText=divColumn19.innerText;
+   document.getElementById("displayText").innerText+=divColumn19.innerText;
 });
 
 divColumn20.addEventListener("click",function(){
-   display.innerText=divColumn20.innerText;
+   document.getElementById("displayText").innerText+=divColumn20.innerText;
 });
 
 divColumn21.addEventListener("click",function(){
-   display.innerText=divColumn21.innerText;
+   document.getElementById("displayText").innerText+=divColumn21.innerText;
 });
 
 divColumn22.addEventListener("click",function(){
-   display.innerText=divColumn22.innerText;
+   document.getElementById("displayText").innerText+=divColumn22.innerText;
 });
 
 divColumn23.addEventListener("click",function(){
-   display.innerText=divColumn23.innerText;
+   document.getElementById("displayText").innerText+=divColumn23.innerText;
 });
 
 divColumn24.addEventListener("click",function(){
-   display.innerText=divColumn24.innerText;
+    computation();
 });
+
+window.addEventListener("keypress",function(){
+   var ip=String.fromCharCode(event.keyCode);
+   if(((ip>=0)&&(ip<=9))||(ip=='+')||(ip=='-')||(ip=='X')||(ip=='/')||(ip=='%')){
+      document.getElementById("displayText").innerText+=ip;
+   }
+   else if(ip=='='){
+      computation();
+   }
+});
+
+function computation(){
+   var inputted=(document.getElementById("displayText").innerText);
+   var val=inputted.split("");
+   for(var i=0;i<val.length;i++){
+      if(val[i]=='+'||val[i]=='-'||val[i]=='X'||val[i]=='/'||val[i]=='%'){
+         var operator=val[i];
+         var numbers=inputted.split(operator);
+         switch(operator){
+            case '+': var sum=(+numbers[0])+(+numbers[1]);
+                      document.getElementById("displayText").innerText=sum;
+                      break;
+            case '-': var diff=(+numbers[0])-(+numbers[1]);
+                      document.getElementById("displayText").innerText=diff;
+                      break;
+            case 'X': var prod=(+numbers[0])*(+numbers[1]);
+                      document.getElementById("displayText").innerText=prod;
+                      break;
+            case '/': var quotient=(+numbers[0])/(+numbers[1]);
+                      document.getElementById("displayText").innerText=quotient;
+                      break;
+            case '%': var mod=(+numbers[0])%(+numbers[1]);    
+                      document.getElementById("displayText").innerText=mod;
+                      break;                             
+         }
+      }
+   }
+}
