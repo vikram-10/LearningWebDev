@@ -1,0 +1,21 @@
+body{
+    background-color: #d45b33;
+}
+
+
+.header{
+    color: snow;
+    border: 3px solid white;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 70px;
+}
+
+.content{
+    text-align: center;
+    margin-top: 7%;
+    color: white;
+    font-size: 30px;
+}
