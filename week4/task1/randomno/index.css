@@ -1,3 +1,34 @@
 body{
-    background-color: red;
+    background-color: #fc0377;
+}
+
+.header{
+    color: white;
+    text-align: center;
+    margin-top: 8%;
+    font-size: 70px;
+    border: 7px solid white;
+    border-radius: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+#clickMe{
+    font-size: 50px;
+    margin-top: 200px;
+    margin-left: 42%;
+    border-radius: 15px;
+}
+
+.numberArea{
+    background-color: #b09ea7;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: -15%;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid white;
 }
