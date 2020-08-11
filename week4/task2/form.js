@@ -211,8 +211,12 @@ divRow1.append(divCol6);
 divRow1.append(divCol7);
 divRow1.append(divCol8);
 
+var count=0;
+
 function submitted(){
    event.preventDefault();
+   count++;
+if(count=='1'){
 document.body.append(divRow2);
 divRow2.append(divCol9);
 divRow2.append(divCol10);
@@ -230,6 +234,8 @@ divCol13.innerText=ip5.value;
 divCol14.innerText=ip6.value;
 divCol15.innerText=ip7.value;
 divCol16.innerText=ip8.value;
-
-
+}
+if(count==2){
+   
+}
 }
