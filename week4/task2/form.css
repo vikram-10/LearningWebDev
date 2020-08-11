@@ -38,3 +38,50 @@ input{
     margin-left: 25%;
     font-size: 15px;
 }
+
+#myTable{
+    position: absolute;
+    margin-top: 34%;
+    margin-left: 5%;
+    font-size: large;
+}
+
+td{
+    padding: 50px;
+}
+
+#tableheadings{
+    position: absolute;
+    float: right;
+}
+
+div{
+    position: relative;
+    margin-left: 90px;
+    float: left;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+#h1{
+    margin-left: 30px;
+}
+
+#h2{
+    position: relative;
+    margin-left: 65px;
+}
+
+#h3{
+    position: relative;
+    margin-left: 125px;
+}
+#h4{
+    position: relative;
+    margin-left: 190px;
+}
+
+#h8{
+    position: relative;
+    margin-left: 150px;
+}

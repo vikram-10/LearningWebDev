@@ -99,77 +99,49 @@ var breaker6=document.createElement('br');
 var breaker7=document.createElement('br');
 
 
-var divRow1=document.createElement('div');
-divRow1.setAttribute('class','row');
-divRow1.setAttribute('id','dataSet');
+var headings=document.createElement('div');
+headings.setAttribute('id','tableHeadings');
 
-var divCol1=document.createElement('div');
-divCol1.setAttribute('class','col-1');
-divCol1.innerText="First Name";
+var h1=document.createElement('div');
+h1.setAttribute('id','h1');
+h1.innerText="First Name";
 
-var divCol2=document.createElement('div');
-divCol2.setAttribute('class','col-1');
-divCol2.innerText="Last Name";
 
-var divCol3=document.createElement('div');
-divCol3.setAttribute('class','col-1');
-divCol3.innerText="Address";
+var h2=document.createElement('div');
+h2.setAttribute('id','h2');
+h2.innerText="Last Name";
 
-var divCol4=document.createElement('div');
-divCol4.setAttribute('class','col-1');
-divCol4.innerText="Pincode";
 
-var divCol5=document.createElement('div');
-divCol5.setAttribute('class','col-1');
-divCol5.innerText="Gender";
+var h3=document.createElement('div');
+h3.setAttribute('id','h3');
+h3.innerText="Address";
 
-var divCol6=document.createElement('div');
-divCol6.setAttribute('class','col-1');
-divCol6.innerText="Food";
 
-var divCol7=document.createElement('div');
-divCol7.setAttribute('class','col-1');
-divCol7.innerText="State";
+var h4=document.createElement('div');
+h4.setAttribute('id','h4');
+h4.innerText="Pincode";
 
-var divCol8=document.createElement('div');
-divCol8.setAttribute('class','col-1');
-divCol8.innerText="Country";
 
-var divRow2=document.createElement('div');
-divRow2.setAttribute('class','row');
-divRow2.setAttribute('id','dataSet2');
+var h5=document.createElement('div');
+h5.innerText="Gender";
 
-var divCol9=document.createElement('div');
-divCol9.setAttribute('class','col-1');
-divCol9.innerText="First Name";
 
-var divCol10=document.createElement('div');
-divCol10.setAttribute('class','col-1');
-divCol10.innerText="Last Name";
+var h6=document.createElement('div');
+h6.innerText="Food";
 
-var divCol11=document.createElement('div');
-divCol11.setAttribute('class','col-1');
-divCol11.innerText="Address";
 
-var divCol12=document.createElement('div');
-divCol12.setAttribute('class','col-1');
-divCol12.innerText="Pincode";
+var h7=document.createElement('div');
+h7.innerText="State";
 
-var divCol13=document.createElement('div');
-divCol13.setAttribute('class','col-1');
-divCol13.innerText="Gender";
 
-var divCol14=document.createElement('div');
-divCol14.setAttribute('class','col-1');
-divCol14.innerText="Food";
+var h8=document.createElement('div');
+h8.setAttribute('id','h8');
+h8.innerText="Country";
 
-var divCol15=document.createElement('div');
-divCol15.setAttribute('class','col-1');
-divCol15.innerText="State";
 
-var divCol16=document.createElement('div');
-divCol16.setAttribute('class','col-1');
-divCol16.innerText="Country";
+var resultTable=document.createElement('table');
+resultTable.setAttribute('id','myTable');
+
 
 document.body.append(heading);
 document.body.append(wrapper);
@@ -200,42 +172,47 @@ form.append(ip8);
 form.append(breaker7);
 form.append(submitButton);
 
+document.body.append(headings);
+headings.append(h1);
+headings.append(h2);
+headings.append(h3);
+headings.append(h4);
+headings.append(h5);
+headings.append(h6);
+headings.append(h7);
+headings.append(h8);
 
-document.body.append(divRow1);
-divRow1.append(divCol1);
-divRow1.append(divCol2);
-divRow1.append(divCol3);
-divRow1.append(divCol4);
-divRow1.append(divCol5);
-divRow1.append(divCol6);
-divRow1.append(divCol7);
-divRow1.append(divCol8);
-
-var count=0;
+document.body.append(resultTable);
 
 function submitted(){
    event.preventDefault();
-   count++;
-if(count=='1'){
-document.body.append(divRow2);
-divRow2.append(divCol9);
-divRow2.append(divCol10);
-divRow2.append(divCol11);
-divRow2.append(divCol12);
-divRow2.append(divCol13);
-divRow2.append(divCol14);
-divRow2.append(divCol15);
-divRow2.append(divCol16);
-divCol9.innerText=ip1.value;
-divCol10.innerText=ip2.value;
-divCol11.innerText=ip3.value;
-divCol12.innerText=ip4.value;
-divCol13.innerText=ip5.value;
-divCol14.innerText=ip6.value;
-divCol15.innerText=ip7.value;
-divCol16.innerText=ip8.value;
+   var table = document.getElementById("myTable");
+   var row = table.insertRow(0);
+   var cell1 = row.insertCell(0);
+   var cell2 = row.insertCell(1);
+   var cell3 = row.insertCell(2);
+   var cell4 = row.insertCell(3);
+   var cell5 = row.insertCell(4);
+   var cell6 = row.insertCell(5);
+   var cell7 = row.insertCell(6);
+   var cell8 = row.insertCell(7);
+   cell1.innerHTML = ip1.value;
+   cell2.innerHTML = ip2.value;
+   cell3.innerHTML = ip3.value;
+   cell4.innerHTML = ip4.value;
+   cell5.innerHTML = ip5.value;
+   cell6.innerHTML = ip6.value;
+   cell7.innerHTML = ip7.value;
+   cell8.innerHTML = ip8.value;
 }
-if(count==2){
-   
-}
-}
+
+
+
+/*function myCreateFunction() {
+   var table = document.getElementById("myTable");
+   var row = table.insertRow(0);
+   var cell1 = row.insertCell(0);
+   var cell2 = row.insertCell(1);
+   cell1.innerHTML = "NEW CELL1";
+   cell2.innerHTML = "NEW CELL2";
+ }*/
