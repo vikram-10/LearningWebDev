@@ -1,0 +1,40 @@
+.body{
+    background-color: seashell;
+}
+.header{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    margin-top: 5%;
+}
+
+.wrapper{
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 37%;
+    font-size: 20px;
+}
+
+input{
+    float: right;
+}
+
+#button{
+    margin-top: 5%;
+    margin-left: 13%;
+    position: absolute;
+    text-align: center;
+}
+
+#dataSet{
+    margin-left: 25%;
+    font-size: 15px;
+    margin-top: 200px;
+    font-weight: bold;
+}
+
+#dataSet2{
+    margin-top: 10px;
+    margin-left: 25%;
+    font-size: 15px;
+}

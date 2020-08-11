@@ -21,3 +21,17 @@
     background-image: url('assets/enemy.png');
     position: absolute;
 }
+
+
+#missiles{
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+#missile1{
+    background-image: url("assets/missile1.png");
+    width: 10px;
+    height: 20px;
+    position: absolute;
+}
