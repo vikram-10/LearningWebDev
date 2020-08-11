@@ -15,9 +15,10 @@ var ele=document.createElement('input');
 ele.setAttribute('type','date');
 ele.setAttribute('required','true');
 ele.setAttribute("name","dob");
+ele.setAttribute('class','dateInput');
+ele.setAttribute('id','dateip')
 
 var submitButton=document.createElement('button');
-submitButton.setAttribute('type','submit');
 submitButton.innerText="Submit";
 
 document.body.append(header);
@@ -29,5 +30,13 @@ form.append(submitButton);
 
 
 submitButton.addEventListener('click',function(){
-    console.log("Submitted!");
+    var ip=document.getElementById('dateip').value;
+    console.log(ip);
+    let now = new Date();
+ 
+    let day = ("0" + now.getDate()).slice(-2);
+    let month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+    let today = (day)+"-"+(month)+"-"+ now.getFullYear();
+    console.log(today);
 })
