@@ -1,0 +1,33 @@
+.tagger{
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 40%;
+}
+
+#header{
+    text-align: center;
+}
+
+
+a{
+    background-color: #A9A9A9;
+    padding: 10%;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#resultList{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.subdatas{
+    margin: 20px;
+    background-color: grey;
+    height: 30px;
+    border-radius: 9px;
+}
