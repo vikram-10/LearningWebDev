@@ -59,10 +59,13 @@ submitButton.addEventListener('click',function(){
     var yearDifference=year-ipYear;
     var monthDifference=month-ipMonth;
     var dayDifference=day-ipDay;
-    inner.append(op1);
+    
     op1.innerText+=yearDifference;
-    inner.append(op2);
+    
     op2.innerText+=monthDifference;
-    inner.append(op3);
+    
     op3.innerText+=dayDifference;
+    inner.append(op1);
+    inner.append(op2);
+    inner.append(op3);
 });

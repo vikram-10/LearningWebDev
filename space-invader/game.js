@@ -1,3 +1,4 @@
+
 var hero={
     left: 575,
     top:700
@@ -23,7 +24,7 @@ var enemies = [
     { left: 800, top: 175 },
     { left: 900, top: 175 }
 ];
-
+ 
 document.onkeydown=function(e){
     if(e.keyCode=='37'){
         hero.left=hero.left-10; 
@@ -37,7 +38,15 @@ document.onkeydown=function(e){
     movement();
 }
 
+addEnemies();
+
 function movement(){
     document.getElementById("hero").style.left=hero.left+'px';
 }
 
+function addEnemies(){
+   document.getElementById('enemies').innerHTML='';
+   for(var i=0;i<enemies.length;i++){
+    document.getElementById('enemies').innerHTML=
+   }
+}
