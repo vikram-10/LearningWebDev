@@ -1,0 +1,10 @@
+.cardstyle{
+    width: 20%;
+    display: inline-block;
+    margin: 10%;
+    height: 20%;
+}
+
+h1{
+    text-align: center;
+}
