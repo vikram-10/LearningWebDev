@@ -46,7 +46,7 @@ function randomer(){
       }
       var imgur=document.createElement('img');
       imgur.setAttribute('class','imgur');
-      imgur.setAttribute('src',"/../assets/b"+a[j]+".gif");
+      imgur.setAttribute('src',"../assets/b"+a[j]+".gif");
       if(a[j]==max){
           imgur.setAttribute('style','display:none');
           blank=j;
