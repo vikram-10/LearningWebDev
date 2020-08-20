@@ -1,0 +1,21 @@
+.header1{
+    text-align: center;
+}
+
+.subheader{
+    text-align: center;
+    color: grey;
+}
+
+.cardDetails{
+    display: inline-block;
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+.buttonStyler{
+    margin-left: 31%;
+    margin-bottom: 15px;
+}
