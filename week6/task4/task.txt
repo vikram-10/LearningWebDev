@@ -1,3 +1,12 @@
 Create a music player application
 In Rapid API Search for Shazam API documentation
 Implement only using OOPS, Ts,WebPack
+
+
+
+API HIT URLS:
+https://shazam.p.rapidapi.com/songs/list-artist-top-tracks?rapidapi-key=20363ac113mshb31c281692decb1p1a7cccjsn1d7b3f349556&locale=en-US&id=40008598
+
+https://shazam.p.rapidapi.com/songs/list-recommendations?locale=en-US&key=484129036&rapidapi-key=20363ac113mshb31c281692decb1p1a7cccjsn1d7b3f349556
+
+
