@@ -59,7 +59,7 @@ var addEnquiries=(categoryRequired)=>{
 //Function to check first 5 status
 var checkStatus=(classObj)=>{
     var result=[];
-   for(var i=0;i<5;i++){
+   for(let i=0;i<5;i++){
         result.push(classObj[i].status);
    }
    return result;

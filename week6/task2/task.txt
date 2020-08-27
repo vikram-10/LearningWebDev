@@ -5,3 +5,10 @@ Write an insert method to store the incoming enquiries (availability check) for 
 Write a method to find the status (available or not ) of the first 5 enquiry in request class, based on the data present in the availability collection.
 Write a query to find the count of different kinds of pets found in availability collection(eg. Dog -5, Cat-3, Parrot-4)
 Write  a method  that maps the request data with availability data,  explaining how many  incoming requests are matching with  each entry (pet availability) found in availability collection.
+
+
+
+call,apply,bind
+lexical this
+ES5/ES6 functions
+recursion function

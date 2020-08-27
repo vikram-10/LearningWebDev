@@ -18,7 +18,7 @@ var reduce=function(values,fn,accumulator){
     }
 }
 
-var filter=function(array,condition){
+var filter=(array,condition)=>{
     var a=[];
      for(var i=0;i<array.length;i++){
          if(array[i].condition==true){
@@ -28,9 +28,9 @@ var filter=function(array,condition){
      return a[i];
 }
 
-var find=function(collection,condition){
+var find=(collection,condition)=>{
      for(var i=0;i<collection.length;i++){
-         if(collection[i]==condition){
+         if(collection[i]==condition){         
              return true
          }
      }
@@ -44,3 +44,6 @@ var sum=function(array){
     }
     return summation;
 }
+
+
+//USe only for,for of
