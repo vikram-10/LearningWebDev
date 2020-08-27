@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,21 +35,92 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-function nibba() {
+exports.__esModule = true;
+var topartists_js_1 = require("./topartists.js");
+var recom_js_1 = require("./recom.js");
+var toptrackButton = document.getElementById('topTracks');
+toptrackButton === null || toptrackButton === void 0 ? void 0 : toptrackButton.addEventListener('click', function () {
+    storeTopartists();
+});
+var recommendedButton = document.getElementById('reco');
+recommendedButton === null || recommendedButton === void 0 ? void 0 : recommendedButton.addEventListener('click', function () {
+});
+var removeButton = document.getElementById('remove');
+removeButton === null || removeButton === void 0 ? void 0 : removeButton.addEventListener('click', function () {
+    var allCards = document.getElementsByClassName('cardExtra');
+    for (var i = 0; i < allCards.length; i++) {
+        allCards[i].remove();
+    }
+});
+function storeTopartists() {
     return __awaiter(this, void 0, void 0, function () {
-        var fetcher, fetcherJson;
+        var counter, fetcher, fetcherJson, tracks;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fetch("https://shazam.p.rapidapi.com/songs/list-artist-top-tracks?rapidapi-key=20363ac113mshb31c281692decb1p1a7cccjsn1d7b3f349556&locale=en-US&id=40008598")];
+                case 0:
+                    counter = 0;
+                    return [4 /*yield*/, fetch('https://shazam.p.rapidapi.com/songs/list-artist-top-tracks?rapidapi-key=20363ac113mshb31c281692decb1p1a7cccjsn1d7b3f349556&locale=en-US&id=40008598')];
                 case 1:
                     fetcher = _a.sent();
                     return [4 /*yield*/, fetcher.json()];
                 case 2:
                     fetcherJson = _a.sent();
-                    console.log(fetcherJson);
+                    tracks = fetcherJson.tracks;
+                    tracks.forEach(function (element) {
+                        if (element.hub.actions == undefined) {
+                            return;
+                        }
+                        else {
+                            var url = (element.hub.actions[1].uri);
+                            var title = (element.title);
+                            var artist = element.subtitle;
+                            var image = (element.share.image);
+                            var p = new topartists_js_1.topArtists(artist, title, url, image);
+                            p.createCard();
+                        }
+                    });
                     return [2 /*return*/];
             }
         });
     });
 }
-nibba();
+function recoArtists() {
+    return __awaiter(this, void 0, void 0, function () {
+        var counter, fetcher, fetcherJson, tracks;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    counter = 0;
+                    return [4 /*yield*/, fetch('https://shazam.p.rapidapi.com/songs/list-recommendations?locale=en-US&key=484129036&rapidapi-key=20363ac113mshb31c281692decb1p1a7cccjsn1d7b3f349556')];
+                case 1:
+                    fetcher = _a.sent();
+                    return [4 /*yield*/, fetcher.json()];
+                case 2:
+                    fetcherJson = _a.sent();
+                    tracks = fetcherJson.tracks;
+                    tracks.forEach(function (element) {
+                        if (element.hub.actions == undefined) {
+                            return;
+                        }
+                        else {
+                            var url = (element.hub.actions[1].uri);
+                            var title = (element.title);
+                            var artist = element.subtitle;
+                            var image = (element.share.image);
+                            var p = new recom_js_1.recommended(artist, title, url, image);
+                            p.createCard();
+                        }
+                    });
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+document.addEventListener('play', function (e) {
+    var audios = document.getElementsByTagName('audio');
+    for (var i = 0, len = audios.length; i < len; i++) {
+        if (audios[i] != e.target) {
+            audios[i].pause();
+        }
+    }
+}, true);
