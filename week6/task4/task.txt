@@ -1,0 +1,3 @@
+Create a music player application
+In Rapid API Search for Shazam API documentation
+Implement only using OOPS, Ts,WebPack
