@@ -15,6 +15,7 @@ recommendedButton?.addEventListener('click',function(){
 var removeButton=document.getElementById('remove');
 removeButton?.addEventListener('click',function(){
   var allCards=document.getElementsByClassName('cardExtra');
+  console.log(allCards);
   for(let i=0;i<allCards.length;i++){
 	  allCards[i].remove();
   }
@@ -33,7 +34,7 @@ async function storeTopartists(){
 			let title=(element.title);
 			let artist=element.subtitle;
 			let image=(element.share.image)
-			let p=new topArtists(artist,title,url,image);
+			let p=new topArtists(artist,title,url,image);   
 			p.createCard();
 		}
 	});
