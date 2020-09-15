@@ -1,9 +1,22 @@
 const express=require('express');
-var app=express();
+const app=express();
 
+var student=[];
 
-app.get("/",function(req,res){
-  res.send("Hello World");
+app.get("/student/:name/:teachers",function(req,res){
+  res.send("You are on Get route");
+});
+
+app.post("/student/:name",function(req,res){
+    var name=req.params.name;
+    //var teachers=req.params.teachers;
+    var obj={
+        "id" : (student.length)-1,
+        "Name": name,
+        //"teacher": teachers
+    }
+    student.push(obj);
+    res.send(student);
 });
 
 
